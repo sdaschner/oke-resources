@@ -11,5 +11,7 @@
 === NGINX ingress
 
 - Install by following https://kubernetes.github.io/ingress-nginx/deploy/ *with RBAC*
-- Install `ingress-nginx` load balancer service: https://github.com/sdaschner/oke-resources/blob/master/ingress-nginx/ingress-nginx-service.yaml[ingress-nginx/ingress-nginx-service.yaml]: + 
- `curl https://raw.githubusercontent.com/sdaschner/oke-resources/master/ingress-nginx/ingress-nginx-service.yaml | kubectl apply -f -`
+- Install `ingress-nginx` load balancer service:
+----
+curl https://raw.githubusercontent.com/sdaschner/oke-resources/master/ingress-nginx/ingress-nginx-service.yaml | kubectl apply -f -
+----

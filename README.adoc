@@ -1,0 +1,14 @@
+= Resources for Oracle Container Engine for Kubernetes (OKE)
+
+== Setup
+
+- Check out documentation: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Concepts/contengoverview.htm
+- Perform prerequisites: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Concepts/contengprerequisites.htm
+- Create cluster with node pool
+- Setup `kubeconfig`: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Tasks/contengaccessingclusterkubectl.htm
+- Enhance RBAC: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Concepts/contengaboutaccesscontrol.htm (bottom of page)
+
+.NGINX ingress
+- install following https://kubernetes.github.io/ingress-nginx/deploy/ with RBAC
+- create patch for "`publish-service`" (same as for GCP/GKE installation)
+- install `ingress-nginx` load balancer service as in https://github.com/sdaschner/oke-resources/tree/master/nginx-ingress/nginx-ingress-service.yaml[nginx-ingress/nginx-ingress-service.yaml]

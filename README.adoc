@@ -8,7 +8,7 @@
 - Setup `kubeconfig`: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Tasks/contengaccessingclusterkubectl.htm[Accessing cluster^]
 - Enhance RBAC: https://docs.us-phoenix-1.oraclecloud.com/Content/ContEng/Concepts/contengaboutaccesscontrol.htm[Access control^] (bottom of page)
 
-.NGINX ingress
-- install following https://kubernetes.github.io/ingress-nginx/deploy/ with RBAC
-- create patch for "`publish-service`" (same as for GCP/GKE installation)
-- install `ingress-nginx` load balancer service as in https://github.com/sdaschner/oke-resources/tree/master/nginx-ingress/nginx-ingress-service.yaml[nginx-ingress/nginx-ingress-service.yaml]
+=== NGINX ingress
+
+- Install by following https://kubernetes.github.io/ingress-nginx/deploy/ *with RBAC*
+- Install `ingress-nginx` load balancer service as in https://github.com/sdaschner/oke-resources/blob/master/ingress-nginx/ingress-nginx-service.yaml[ingress-nginx/ingress-nginx-service.yaml]
